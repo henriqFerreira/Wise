@@ -1,0 +1,44 @@
+:root {
+    /* Fonts */
+    --default-font: 'Red Hat Display', sans-serif;
+
+    --fw-bold: bold;
+
+    --fs-small: 1rem;
+    --fs-regular: 1.1rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.3rem;
+
+    /* Borders */
+    --br-default: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Colors */
+        --base-ntrl-min: 255, 255, 255;
+        --base-ntrl-max: 0, 0, 0;
+
+        --base-clr: 34, 34, 34;
+        --base-clr-lt: 39, 43, 46;
+
+        --primary-clr: 32, 50, 63;
+        --secondary-clr: 50, 91, 75;
+        --tertiary-clr: 237, 241, 246;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Colors */
+        --base-ntrl-min: 255, 255, 255;
+        --base-ntrl-max: 0, 0, 0;
+
+        --base-clr: 34, 34, 34;
+        --base-clr-lt: 39, 43, 46;
+
+        --primary-clr: 32, 50, 63;
+        --secondary-clr: 50, 91, 75;
+        --tertiary-clr: 237, 241, 246;
+    }
+}

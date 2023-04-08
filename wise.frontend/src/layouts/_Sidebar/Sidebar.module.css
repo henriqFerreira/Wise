@@ -1,0 +1,27 @@
+.aside {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    padding: 10px;
+    background-color: rgba(var(--base-clr), 1);
+    transition: all .3s ease-in-out;
+}
+
+.aside.expanded { width: 250px; }
+.aside.collapsed { width: 60px; }
+
+.toggleAside {
+    --l-size: 40px;
+    position: absolute;
+    top: calc(0% + var(--l-size)/2); left: calc(100% - var(--l-size)/3);
+    width: var(--l-size); height: var(--l-size);
+    padding: 5px;
+    background-color: rgba(var(--base-clr), 1);
+    border: 1px solid rgba(var(--base-clr-lt), 1);
+    border-radius: var(--br-default);
+    font-size: var(--fs-medium);
+    color: rgba(var(--base-ntrl-min), 1);
+    cursor: pointer;
+    outline: none;
+}
+
