@@ -10,3 +10,9 @@
 :root {
     font-family: var(--default-font);
 }
+
+#root {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-column-gap: 50px;
+}

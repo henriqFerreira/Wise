@@ -12,6 +12,7 @@
     overflow: hidden;
     white-space: nowrap;
     transition: background-color .1s linear;
+    text-decoration: none;
 }
 
 .item.expanded {
