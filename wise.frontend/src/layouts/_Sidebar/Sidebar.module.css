@@ -12,6 +12,9 @@
 
 .toggleAside {
     --l-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: calc(0% + var(--l-size)/2); left: calc(100% - var(--l-size)/3);
     width: var(--l-size); height: var(--l-size);
