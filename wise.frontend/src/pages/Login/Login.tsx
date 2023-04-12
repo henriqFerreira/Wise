@@ -3,6 +3,11 @@ import LoginForm from "../../modules/Auth/LoginForm/LoginForm";
 import styles from "./Login.module.css";
 
 class Login extends Component {
+
+    handleLogin = async (email: string, password: string) => {
+
+    }
+
     render () {
         return (
             <main className={ styles.main }>
@@ -10,7 +15,7 @@ class Login extends Component {
                 <span className={ styles.circle }></span>
                 <span className={ styles.circle }></span>
                 <span className={ styles.circle }></span>
-                <LoginForm />
+                <LoginForm onSubmit={ this.handleLogin } />
             </main>
         )
     }
