@@ -2,8 +2,10 @@
     /* Fonts */
     --default-font: 'Red Hat Display', sans-serif;
 
+    --fw-light: 100;
     --fw-bold: bold;
 
+    --fs-xsmall: 0.9rem;
     --fs-small: 1rem;
     --fs-regular: 1.1rem;
     --fs-medium: 1.2rem;
@@ -11,6 +13,7 @@
 
     /* Borders */
     --br-default: 4px;
+    --br-full: 100%;
 }
 
 @media (prefers-color-scheme: light) {

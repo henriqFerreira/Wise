@@ -1,9 +1,17 @@
 import { Component } from "react";
+import LoginForm from "../../modules/Auth/LoginForm/LoginForm";
+import styles from "./Login.module.css";
 
 class Login extends Component {
     render () {
         return (
-            <h1>Login page</h1>
+            <main className={ styles.main }>
+                <span className={ styles.circle }></span>
+                <span className={ styles.circle }></span>
+                <span className={ styles.circle }></span>
+                <span className={ styles.circle }></span>
+                <LoginForm />
+            </main>
         )
     }
 }

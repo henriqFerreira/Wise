@@ -1,0 +1,34 @@
+.circle {
+    width: var(--l-size);
+    height: var(--l-size);
+    position: absolute;
+    top: calc(50% - var(--l-posY)); left: calc(50% - var(--l-posX));
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: rgba(var(--base-clr-lt), 1);
+    border-radius: var(--br-full);
+    filter: blur(2px);
+}
+
+.circle:nth-child(1) { 
+    --l-size: 200px;
+    --l-posY: 20%;
+    --l-posX: -10%;
+}
+
+.circle:nth-child(2) {
+    --l-size: 150px;
+    --l-posY: -15%;
+    --l-posX: -10%;    
+}
+
+.circle:nth-child(3) {
+    --l-size: 160px;
+    --l-posY: -20%;
+    --l-posX: 10%;
+}
+.circle:nth-child(4) {
+    --l-size: 120px;
+    --l-posY: 11%;
+    --l-posX: 13%;
+}

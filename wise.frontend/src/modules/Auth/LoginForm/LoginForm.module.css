@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: rgba(var(--base-ntrl-min), 1);
+    border-radius: var(--br-default);
+    backdrop-filter: blur(50px);
+}
+
+.form h4 {
+    font-weight: var(--fw-light);
+}
+
+.loginButton {
+    padding: 10px 15px;
+    background-color: rgba(var(--primary-clr), 1);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-light);
+    text-transform: uppercase;
+    color: rgba(var(--base-ntrl-min), 1);
+    border: none;
+    border-radius: var(--br-default);
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    filter: brightness(.9);
+}

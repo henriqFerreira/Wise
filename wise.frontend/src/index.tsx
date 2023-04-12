@@ -7,6 +7,7 @@ import Assignments from './pages/Assignments/Assignments';
 import Pages from './pages/Pages/Pages';
 import Rooms from './pages/Rooms/Rooms';
 import Login from './pages/Login/Login';
+import AuthApp from './AuthApp';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -22,7 +23,9 @@ root.render(
                     <Route path='pages' element={ <Pages /> } />
                     <Route path='rooms' element={ <Rooms /> } />
                 </Route>
-                <Route path='/login' element={ <Login /> } />
+                <Route path='/' element={ <AuthApp /> }>
+                    <Route path='login' element={ <Login /> } />
+                </Route>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

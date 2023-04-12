@@ -1,0 +1,38 @@
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    font-size: var(--fs-xsmall);
+    color: rgba(var(--base-ntrl-min), 1);
+    text-transform: uppercase;
+}
+
+.iconGroup {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(var(--base-clr-lt), 1);
+    font-size: var(--fs-small);
+    color: rgba(var(--base-clr), 1);
+    border: none;
+    border-radius: var(--br-default);
+    outline: none;
+    transition: color .05s linear;
+}
+
+.input:is(:hover, :focus) {
+    color: rgba(var(--base-ntrl-min), 1);
+}
+
+.icon {
+    --l-size: var(--fs-medium);
+    font-size: var(--l-size);
+    position: absolute;
+    top: 50%; left: calc(100% - (var(--l-size) + 15px));
+    transform: translateY(-50%);
+    color: rgba(var(--base-clr), 1);
+}
