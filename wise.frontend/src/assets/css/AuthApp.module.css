@@ -1,0 +1,7 @@
+.content {
+    background-color: rgba(var(--base-clr), 1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
