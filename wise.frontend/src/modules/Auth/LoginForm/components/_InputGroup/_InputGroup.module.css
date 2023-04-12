@@ -36,3 +36,9 @@
     transform: translateY(-50%);
     color: rgba(var(--base-clr), 1);
 }
+
+.error {
+    font-size: var(--fs-xsmall);
+    color: rgba(var(--alert-clr), 1);
+    text-transform: none;
+}

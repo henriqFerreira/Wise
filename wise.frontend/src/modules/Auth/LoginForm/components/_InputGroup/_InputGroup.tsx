@@ -8,6 +8,7 @@ interface Properties {
     type: string;
     placeholder: string;
     icon: string;
+    error: string;
 }
 
 class InputGroup extends Component<Properties> {
@@ -22,7 +23,7 @@ class InputGroup extends Component<Properties> {
     }
 
     render () {
-        const { label, type, placeholder, icon } = this.props;
+        const { label, type, placeholder, icon, error } = this.props;
         const Icon = InputGroup.iconsMap()[icon] || FaCircleNotch;
 
         return (
@@ -32,6 +33,8 @@ class InputGroup extends Component<Properties> {
                     <input className={ styles.input } type={ type } placeholder={ placeholder } />
                     <Icon className={ styles.icon } />
                 </div>
+
+                { error !== '' ? <span className={ styles.error }> { error } </span> : '' }
             </label>
         );
     }

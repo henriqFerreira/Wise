@@ -28,6 +28,8 @@
         --primary-clr: 32, 50, 63;
         --secondary-clr: 50, 91, 75;
         --tertiary-clr: 237, 241, 246;
+
+        --alert-clr: 197, 50, 59;
     }
 }
 
@@ -43,5 +45,7 @@
         --primary-clr: 32, 50, 63;
         --secondary-clr: 50, 91, 75;
         --tertiary-clr: 237, 241, 246;
+
+        --alert-clr: 197, 50, 59;
     }
 }
