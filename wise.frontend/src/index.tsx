@@ -1,13 +1,13 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import Auth from './Auth';
 import Home from './pages/Home/Home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Assignments from './pages/Assignments/Assignments';
 import Pages from './pages/Pages/Pages';
 import Rooms from './pages/Rooms/Rooms';
 import Login from './pages/Login/Login';
-import AuthApp from './AuthApp';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -23,7 +23,7 @@ root.render(
                     <Route path='pages' element={ <Pages /> } />
                     <Route path='rooms' element={ <Rooms /> } />
                 </Route>
-                <Route path='/' element={ <AuthApp /> }>
+                <Route path='/' element={ <Auth /> }>
                     <Route path='login' element={ <Login /> } />
                 </Route>
             </Routes>
