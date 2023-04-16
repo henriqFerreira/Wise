@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Auth from './Auth';
+import App from './layouts/App';
+import Auth from './layouts/Auth';
 import Home from './pages/Home/Home';
 import Assignments from './pages/Assignments/Assignments';
 import Pages from './pages/Pages/Pages';

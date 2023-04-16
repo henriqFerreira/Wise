@@ -18,8 +18,8 @@ class Sidebar extends Component<{}, State> {
 
     render () {
         return (
-            <aside className={`${ styles.aside } ${ this.state.Shown ? styles.expanded : styles.collapsed }`}>
-                <button className={ styles.toggleAside } onClick={ () => this.toggle() }>
+            <aside data-testid="aside" className={`${ styles.aside } ${ this.state.Shown ? styles.expanded : styles.collapsed }`}>
+                <button data-testid="button" className={ styles.toggleAside } onClick={ () => this.toggle() }>
                     { this.state.Shown ? <FaAngleDoubleRight /> : <FaAngleDoubleLeft /> }
                 </button>
                 <div className={ styles.items }>

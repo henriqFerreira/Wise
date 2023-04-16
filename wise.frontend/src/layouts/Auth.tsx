@@ -1,10 +1,10 @@
 import { Component } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./layouts/_Header/_Header";
 import styles from "./assets/css/AuthApp.module.css";
 import "./assets/css/global.css";
+import Header from "./_Header/_Header";
 
-export default class AuthApp extends Component {
+export default class Auth extends Component {
     render () {
         return (
             <div className={ styles.content }>

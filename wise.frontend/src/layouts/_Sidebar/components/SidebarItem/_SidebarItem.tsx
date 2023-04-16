@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { LinkProps } from "react-router-dom";
+import { BrowserRouter, LinkProps } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaBookOpen, FaCircleNotch, FaGraduationCap, FaHome, FaUser } from "react-icons/fa";
 import styles from "./SidebarItem.module.css";
@@ -27,10 +27,12 @@ class SidebarItem extends Component<Properties> {
         const Icon = SidebarItem.iconsMap()[icon] || FaCircleNotch
 
         return (
-            <Link to={ to } className={` ${ styles.item } ${ isShown ? styles.expanded : styles.collapsed } `}>
-                <Icon className={ styles.icon } />
-                { isShown ? placeholder : '' }
-            </Link>
+            <BrowserRouter>
+                <Link to={ to } className={` ${ styles.item } ${ isShown ? styles.expanded : styles.collapsed } `}>
+                    <Icon className={ styles.icon } />
+                    { isShown ? placeholder : '' }
+                </Link>
+            </BrowserRouter>
         )
     }
 }
