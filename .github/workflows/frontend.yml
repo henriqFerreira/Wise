@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-        working-directory: .wise.frontend/
+        working-directory: wise.frontend/
 
       - name: Running Jest tests
         run: npm test
-        working-directory: .wise.frontend/
+        working-directory: wise.frontend/
