@@ -1,0 +1,23 @@
+name: Wise.Front-end Pipeline
+
+on:
+  push:
+    branch: [ main, Homolog ]
+  pull_request:
+    branch: [ main, Homolog ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: action/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+
+      - name: Running Jest tests
+        run: npm test
